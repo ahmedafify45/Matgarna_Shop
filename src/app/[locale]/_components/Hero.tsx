@@ -45,14 +45,14 @@ async function Hero() {
           </div>
         </div>
         <div className="relative hidden md:block">
-          <Image
-            src="/assets/images/shop.png"
-            alt="Pizza"
-            fill
-            className="object-contain"
-            loading="eager"
-            priority
-          />
+  <Image
+  src={require("../../public/assets/images/shop.png")}
+  alt="Pizza"
+  fill
+  className="object-contain"
+  loading="eager"
+  priority
+/>
         </div>
       </div>
     </section>
