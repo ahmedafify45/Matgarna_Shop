@@ -19,7 +19,7 @@ async function Hero() {
           <p className="text-accent my-4">{hero.description}</p>
           <div className="flex items-center gap-4">
             <Link
-              href={`/${Routes.MENU}`}
+              href={`/${Routes.PRODUCT}`}
               className={`${buttonVariants({
                 size: "lg",
               })} space-x-2 !px-4 !rounded-full uppercase`}
@@ -47,7 +47,7 @@ async function Hero() {
         <div className="relative hidden md:block">
           <Image
             src="/assets/images/shop.png"
-            alt="shop"
+            alt="Pizza"
             fill
             className="object-contain"
             loading="eager"
