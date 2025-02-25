@@ -19,7 +19,7 @@ async function Hero() {
           <p className="text-accent my-4">{hero.description}</p>
           <div className="flex items-center gap-4">
             <Link
-              href={`/${Routes.PRODUCT}`}
+              href={`/${Routes.MENU}`}
               className={`${buttonVariants({
                 size: "lg",
               })} space-x-2 !px-4 !rounded-full uppercase`}
@@ -45,14 +45,14 @@ async function Hero() {
           </div>
         </div>
         <div className="relative hidden md:block">
-  <Image
-  src={require("../../public/assets/images/shop.png")}
-  alt="Pizza"
-  fill
-  className="object-contain"
-  loading="eager"
-  priority
-/>
+          <Image
+            src="/assets/images/shop.png"
+            alt="shop"
+            fill
+            className="object-contain"
+            loading="eager"
+            priority
+          />
         </div>
       </div>
     </section>
