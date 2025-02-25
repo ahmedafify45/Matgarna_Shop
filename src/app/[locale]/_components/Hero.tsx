@@ -48,7 +48,8 @@ async function Hero() {
           <Image
             src="/shop.png"
             alt="Pizza"
-            fill
+            width={448}
+            height={352}
             className="object-contain"
             loading="eager"
             priority
