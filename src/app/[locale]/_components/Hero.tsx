@@ -46,10 +46,9 @@ async function Hero() {
         </div>
         <div className="relative hidden md:block">
           <Image
-            src="/shop.png"
+            src="/assets/images/shop.png"
             alt="Pizza"
-            width={448}
-            height={352}
+            fill
             className="object-contain"
             loading="eager"
             priority
