@@ -8,7 +8,7 @@ async function Product({ items }: { items: ProductWithRelations[] }) {
   const locale = await getCurrentLocale();
   const { noProductsFound } = await getTrans(locale);
   return items.length > 0 ? (
-    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <ul className="flex flex-wrap justify-center gap-4 sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10">
       {items.map((item) => (
         <ProductItem key={item.id} item={item} />
       ))}

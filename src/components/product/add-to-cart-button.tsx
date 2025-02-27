@@ -27,6 +27,7 @@ import {
   selectCartItems,
 } from "@/redux/features/cart/cartSlice";
 import { getItemQuantity } from "@/lib/cart";
+import { ShoppingCartIcon } from "lucide-react";
 
 function AddToCartButton({ item }: { item: ProductWithRelations }) {
   const cart = useAppSelector(selectCartItems);
@@ -63,12 +64,10 @@ function AddToCartButton({ item }: { item: ProductWithRelations }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button
-          type="button"
-          size="lg"
-          className="mt-4 text-white rounded-full !px-8"
-        >
-          <span>Add To Cart</span>
+        <Button className="mt-6 w-10 relative group flex items-center justify-center bg-blue-200 hover:!bg-slate-500">
+          <ShoppingCartIcon
+            className={`text-primary group-hover:text-primary duration-200 transition-colors !w-6 !h-6`}
+          />
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] max-h-[80vh] overflow-y-auto">

@@ -71,7 +71,7 @@ function Navbar({
               onClick={() => setOpenMenu(false)}
               href={`/${locale}/${link.herf}`}
               className={`
-              }hover:text-primary duration-200  font-semibold ${
+              hover:text-primary duration-200  font-semibold ${
                 pathname.startsWith(`/${locale}/${link.herf}`)
                   ? "text-primary"
                   : "text-accent"
